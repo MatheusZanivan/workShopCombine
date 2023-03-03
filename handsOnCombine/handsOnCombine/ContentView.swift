@@ -16,12 +16,12 @@ struct ContentView: View {
 		AsyncImage(url: URL(string: gatinhoAtual)){ image in
 			image
 				.resizable()
-				.aspectRatio(contentMode: .fill)
+				.aspectRatio(contentMode: .fit)
 			
 		} placeholder: {
 			Color.gray
 		}
-		
+		Spacer()
 		Button("Carregar gato"){
             vm.getCat()
 			gatinhoAtual = "https://cataas.com/\(vm.gato.url)"
@@ -31,8 +31,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
-}
+//struct ContentView_Previews: PreviewProvider {
+//	static var previews: some View {
+//		ContentView()
+//	}
+//}

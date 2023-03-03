@@ -84,8 +84,10 @@ class DownloadDataWithCombine : ObservableObject{
         urlComponents.path = "/cat"
         urlComponents.queryItems = [URLQueryItem(name: "html", value: "true"), URLQueryItem(name: "json", value: "true")]
         
-        print("url criada através do guard let: \(url)")
-        print("url criada através do urlComponents: \(urlComponents.url!)")
+//        guard let url = urlComponents.url else { return }
+        
+//        print("url criada através do guard let: \(url)")
+//        print("url criada através do urlComponents: \(urlComponents.url!)")
         
 		
 		//nessa parte falamos de que é aqui que a gente vai usar o combine, e explicamos com a analogia da revista
