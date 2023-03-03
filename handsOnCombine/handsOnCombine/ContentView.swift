@@ -23,6 +23,7 @@ struct ContentView: View {
 		}
 		
 		Button("Carregar gato"){
+            vm.getCat()
 			gatinhoAtual = "https://cataas.com/\(vm.gato.url)"
 		}
 		

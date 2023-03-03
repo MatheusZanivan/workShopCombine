@@ -73,9 +73,20 @@ class DownloadDataWithCombine : ObservableObject{
 	
 	func getCat(){
 		
-		//quando a gente cria essa url aqui, ela é opcional entao a gente tem que tem certea que é uma url válida ai usamos o guardLet
+		//quando a gente cria essa url aqui, ela é opcional entao a gente tem que tem certeza que é uma url válida ai usamos o guardLet
 		guard let url = URL(string: "https://cataas.com/cat?html=true&json=true") else { return }
 		
+        // Além de criar uma variável do tipo URL e tratar seu valor opcional com o guard let, podemos utilizar uma outra estrutura, chama de urlComponents, onde podemos "desmembrar" nossa URL em diversos componentes, veja uma adptação da nossa url da cat API usando o urlComponents:
+        var urlComponents = URLComponents()
+        
+        urlComponents.scheme = "https"
+        urlComponents.host = "cataas.com"
+        urlComponents.path = "/cat"
+        urlComponents.queryItems = [URLQueryItem(name: "html", value: "true"), URLQueryItem(name: "json", value: "true")]
+        
+        print("url criada através do guard let: \(url)")
+        print("url criada através do urlComponents: \(urlComponents.url!)")
+        
 		
 		//nessa parte falamos de que é aqui que a gente vai usar o combine, e explicamos com a analogia da revista
 		
