@@ -11,6 +11,7 @@
 		3B7984A029AD6379002E8E02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B79849F29AD6379002E8E02 /* ContentView.swift */; };
 		3B7984A229AD637A002E8E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7984A129AD637A002E8E02 /* Assets.xcassets */; };
 		3B7984A629AD637A002E8E02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7984A529AD637A002E8E02 /* Preview Assets.xcassets */; };
+		3B7984AD29AE6C91002E8E02 /* DownloadDataWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7984AC29AE6C91002E8E02 /* DownloadDataWithCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3B7984A129AD637A002E8E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7984A329AD637A002E8E02 /* handsOnCombine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = handsOnCombine.entitlements; sourceTree = "<group>"; };
 		3B7984A529AD637A002E8E02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B7984AC29AE6C91002E8E02 /* DownloadDataWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDataWithCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3B7984A129AD637A002E8E02 /* Assets.xcassets */,
 				3B7984A329AD637A002E8E02 /* handsOnCombine.entitlements */,
 				3B7984A429AD637A002E8E02 /* Preview Content */,
+				3B7984AC29AE6C91002E8E02 /* DownloadDataWithCombine.swift */,
 			);
 			path = handsOnCombine;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7984AD29AE6C91002E8E02 /* DownloadDataWithCombine.swift in Sources */,
 				3B7984A029AD6379002E8E02 /* ContentView.swift in Sources */,
 				3B79849E29AD6379002E8E02 /* handsOnCombineApp.swift in Sources */,
 			);
